@@ -1,5 +1,11 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Demo app initially a static page
+|--------------------------------------------------------------------------
+
+
 use App\Models\User;
 
 uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
@@ -13,3 +19,4 @@ test('authenticated users can visit the dashboard', function () {
 
     $this->get('/dashboard')->assertOk();
 });
+*/

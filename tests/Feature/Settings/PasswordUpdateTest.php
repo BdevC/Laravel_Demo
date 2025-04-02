@@ -1,5 +1,11 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Demo app is initially a static page
+|--------------------------------------------------------------------------
+
+
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
@@ -40,3 +46,4 @@ test('correct password must be provided to update password', function () {
         ->assertSessionHasErrors('current_password')
         ->assertRedirect('/settings/password');
 });
+*/

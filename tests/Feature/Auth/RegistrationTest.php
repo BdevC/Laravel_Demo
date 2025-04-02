@@ -1,5 +1,10 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Demo app initially will not use authentication
+|--------------------------------------------------------------------------
+
 uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
 
 test('registration screen can be rendered', function () {
@@ -19,3 +24,5 @@ test('new users can register', function () {
     $this->assertAuthenticated();
     $response->assertRedirect(route('dashboard', absolute: false));
 });
+
+*/
