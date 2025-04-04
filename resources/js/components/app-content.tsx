@@ -16,3 +16,16 @@ export function AppContent({ variant = 'header', children, ...props }: AppConten
         </main>
     );
 }
+
+
+
+import hero from '/public/images/using-vim.png'; // Tell webpack this JS file uses this image
+
+console.log(hero); // /logo.84287d09.png
+
+function Hero() {
+  // Import result is the URL of your image
+  return <a href='https://inkscape.org/~doctormo/%E2%98%85code-it-ralph' target="_blank"><img src={hero} alt="vim Joke"></img></a>;
+}
+
+export default Hero;
