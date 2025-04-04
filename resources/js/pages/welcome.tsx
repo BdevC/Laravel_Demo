@@ -1,4 +1,4 @@
-import Hero from '@/components/app-content';
+import { Hero, SingleSourceTruthHeader, Trio } from '@/components/app-content';
 import { Head, Link } from '@inertiajs/react';
 
 export default function Welcome() {
@@ -11,29 +11,23 @@ export default function Welcome() {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
             <div className="flex min-h-screen flex-col items-center bg-[#FDFDFC] p-6 text-[#1b1b18] lg:justify-center lg:p-8 dark:bg-[#0a0a0a]">
-                <header className="mb-6 w-full max-w-[335px] text-sm not-has-[nav]:hidden lg:max-w-4xl">
-                    {/* TODO make header a component */}
-                    <nav className="flex items-center justify-end gap-4">
-                        <Link
-                            href={route('about')}
-                            className="inline-block rounded-sm border border-transparent px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#19140035] dark:text-[#EDEDEC] dark:hover:border-[#3E3E3A]"
-                        >
-                            About
-                        </Link>
-                    </nav>
-                </header>
+                <SingleSourceTruthHeader></SingleSourceTruthHeader>
                 <div className="flex w-full items-center justify-center opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
                     <main className="flex w-full max-w-[335px] flex-wrap lg:max-w-4xl">
                         <div className="flex flex-col w-full items-left justify-left">
-                            <h1 className="text-4xl mb-1 font-bold">Front End Demo</h1>
                             <p>This isn’t a real site, but the code here is real. All images on this fake site are from the
                                 <a className="font-bold"href="https://inkscape.org/gallery"> Inkscape gallery.</a>
-                                &nbsp;The initial intention was to theme the site as a Bicycle club. 
-                                Some headings still reflect this intention.</p>
+                                &nbsp;The site was designed using Figma.  It uses Laravel, React and Tailwind CSS. 
+                                &nbsp;The initial intention was to theme the site as a bicycle club.
+                                &nbsp;Some headings still reflect this intention.</p>
                         </div>
                         <div className="min-w-full mt-3">
                             <Hero></Hero>
                         </div>
+                        <div className="flex flex-col w-full items-left justify-left">
+                            <h1 className="text-3xl mb-1 font-semibold mt-3 mb-3">See The World on a Bike</h1>
+                        </div>
+                        <Trio></Trio>
                     </main>
                 </div>
 
