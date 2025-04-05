@@ -1,5 +1,5 @@
 import { Hero, SingleSourceTruthHeader, SSTFooter, Trio } from '@/components/app-content';
-import { Head, Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 
 export default function Welcome() {
 

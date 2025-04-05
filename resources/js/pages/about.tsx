@@ -1,5 +1,5 @@
 import { SingleSourceTruthHeader, SSTFooter, Aboutimg } from '@/components/app-content';
-import { Head, Link } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 
 export default function About() {
 
