@@ -18,10 +18,22 @@ export function AppContent({ variant = 'header', children, ...props }: AppConten
 }
 
 
-import hero from '/public/images/using-vim.png'; // Tell webpack this JS file uses this image
+import hero from '/public/images/about-screen.png'; // Tell webpack this JS file uses this image
 function Hero() {
   // Import result is the URL of your image
-  return <a href='https://inkscape.org/~doctormo/%E2%98%85code-it-ralph' target="_blank"><img src={hero} alt="vim Joke" className='rounded-sm'></img></a>;
+  return (<a href='https://inkscape.org/~doctormo/%E2%98%85code-it-ralph' target="_blank">
+    <img src={hero} alt="vim Joke" className='rounded-sm'></img>
+    </a>
+    );
+}
+
+import about from '/public/images/using-vim.png'; // Tell webpack this JS file uses this image
+function Aboutimg() {
+  // Import result is the URL of your image
+  return (<a href='https://inkscape.org/~doctormo/%E2%98%85code-it-ralph' target="_blank">
+    <img src={about} alt="vim Joke" className='rounded-sm'></img>
+    </a>
+    );
 }
 
 
@@ -32,8 +44,8 @@ import { Link } from '@inertiajs/react';
 
 function Trio() {
   return (
-    <div className='columns-3'>
-        <a href='https://inkscape.org/~Jack+S./%E2%98%85wave23' target="_blank"><img src={wave23} alt="waves" className='aspect-square rounded-sm'></img></a>
+    <div className="grid gap-4 mt-3 mb-3 grid-cols-1 lg:grid-cols-3 grid-rows-3 lg:grid-rows-1">
+        <a href='https://inkscape.org/~Jack+S./%E2%98%85wave23' target="_blank"><img src={wave23} alt="waves" className="aspect-square rounded-sm"></img></a>
         <a href='https://inkscape.org/~rafael_clemos/%E2%98%85titans-of-growth' target="_blank"><img src={titansGrowth} alt="titans" className='aspect-square rounded-sm'></img></a>
         <a href='https://inkscape.org/~stephanieluz/%E2%98%85farmscape' target="_blank"><img src={farmscape} alt="vim Joke" className='aspect-square rounded-sm'></img></a>
     </div>
@@ -42,8 +54,8 @@ function Trio() {
 
 function SingleSourceTruthHeader(){
     return (
-    <header className="flex flex-row mb-6 w-full max-w-[335px] text-sm not-has-[nav]:hidden lg:max-w-4xl">
-        <a href={route('home')} className="basis-7xl text-4xl mb-1 font-bold items-left"><h1 >Front End Demo</h1></a>
+    <header className="flex flex-row w-full max-w-[335px] text-sm not-has-[nav]:hidden lg:max-w-4xl">
+        <a href={route('home')} className="basis-7xl  mb-1 font-bold items-left text-3xl lg:text-4xl"><h1 >Front End Demo</h1></a>
         {/* TODO make header a component */}
         <nav className="basis-x1 flex items-center justify-end gap-4">
             <Link
@@ -56,5 +68,21 @@ function SingleSourceTruthHeader(){
     </header>
     );
 }
-export { Hero, Trio, SingleSourceTruthHeader };
+// Single Source of Truth Footer
+function SSTFooter(){
+    return (
+        <footer className='w-full py-2'>
+            <h1 className='mb-1 font-bold items-left text-xl'>Look a Footer</h1>
+            <ul className="grid grid-cols-1 lg:grid-cols-4 ">
+                <li>Not-A-Link</li>
+                <li>Filling-Space</li>
+                <li>Other-Footer-Item</li>
+                <li>More-Content</li>
+            </ul>
+        </footer>
+    );
+}
+
+export { Hero, Trio, SingleSourceTruthHeader, SSTFooter , Aboutimg};
+
 
