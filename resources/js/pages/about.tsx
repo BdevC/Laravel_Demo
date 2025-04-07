@@ -18,9 +18,20 @@ export default function About() {
                         </div>
                         <div>
                             <h1 className='text-3xl font-semibold'>About</h1>
-                            <p>This is the about section of the webiste.  I'll be sure to fill this in with actual information 
-                            about myself once I get the CSS done.  For now this text should work well enough to hold some information.
-                            I will also take up enough space to help ge the CSS right.</p>
+                            <p>
+                                I have startup energy.  A letter of recommendation says this: <q> Ben has a work ethic that
+                                is unparalleled and is always willing to go the extra mile to see the project through completion.</q>
+                                - MRS VP of technology, Brent Sink. I regularly take care of those around me. <q>He actively 
+                                collaborates with the other team members, providing feedback and suggestions that lead to stronger, 
+                                more stable code in our projects.</q>- MRS Lead Software Engineer, Dennie Davy. In my six years 
+                                of work at MRS Electronics, I always received the highest possible score on performance reviews, 
+                                and I would like to be equally important as an asset to your company. <q>It’s not only Ben’s 
+                                technical skills that impress me. Ben is a joy to work with because of his strong positive attitude 
+                                and determination.</q>- Engineering Manager, Josh Barnheiser
+                            </p>
+                            <p> 
+                                Letters of recommendation are available upon request.
+                            </p>
                         </div>
                         <SSTFooter></SSTFooter>
                     </main>
