@@ -17,8 +17,8 @@ export default function About() {
                             <Aboutimg></Aboutimg>
                         </div>
                         <div>
-                            <h1 className='text-3xl font-semibold'>About</h1>
-                            <p>
+                            <h1 className='text-3xl font-semibold dark:text-[#EDEDEC]'>About</h1>
+                            <p className="dark:text-[#EDEDEC]">
                                 I have startup energy.  A letter of recommendation says this: <q> Ben has a work ethic that
                                 is unparalleled and is always willing to go the extra mile to see the project through completion.</q>
                                 - MRS VP of technology, Brent Sink. I regularly take care of those around me. <q>He actively 
@@ -29,7 +29,7 @@ export default function About() {
                                 technical skills that impress me. Ben is a joy to work with because of his strong positive attitude 
                                 and determination.</q>- Engineering Manager, Josh Barnheiser
                             </p>
-                            <p> 
+                            <p className="dark:text-[#EDEDEC]"> 
                                 Letters of recommendation are available upon request.
                             </p>
                         </div>

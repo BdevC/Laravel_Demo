@@ -55,7 +55,7 @@ function Trio() {
 function SingleSourceTruthHeader(){
     return (
     <header className="flex flex-row w-full max-w-[335px] text-sm not-has-[nav]:hidden lg:max-w-4xl">
-        <a href={route('home')} className="basis-7xl  mb-1 font-bold items-left text-3xl lg:text-4xl"><h1 >Front End Demo</h1></a>
+        <a href={route('home')} className="basis-7xl  mb-1 font-bold items-left text-3xl lg:text-4xl"><h1 className="dark:text-[#EDEDEC] dark:hover:border-[#3E3E3A]">Front End Demo</h1></a>
         {/* TODO make header a component */}
         <nav className="basis-x1 flex items-center justify-end gap-4">
             <Link
@@ -71,13 +71,13 @@ function SingleSourceTruthHeader(){
 // Single Source of Truth Footer
 function SSTFooter(){
     return (
-        <footer className='w-full py-2'>
-            <h1 className='mb-1 font-bold items-left text-xl'>Look a Footer</h1>
-            <ul className="grid grid-cols-1 lg:grid-cols-4 ">
-                <li>Not-A-Link</li>
-                <li>Filling-Space</li>
-                <li>Other-Footer-Item</li>
-                <li>More-Content</li>
+        <footer className='w-full py-2 dark:text-[#EDEDEC] dark:hover:border-[#3E3E3A]'>
+            <h1 className='mb-1 font-bold items-left text-xl dark:text-[#EDEDEC] dark:hover:border-[#3E3E3A]'>Look a Footer</h1>
+            <ul className="grid grid-cols-1 lg:grid-cols-4 dark:text-[#EDEDEC] dark:hover:border-[#3E3E3A]">
+                <li className="dark:text-[#EDEDEC]">Not-A-Link</li>
+                <li className="dark:text-[#EDEDEC]"> Filling-Space</li>
+                <li className="dark:text-[#EDEDEC]">Other-Footer-Item</li>
+                <li className="dark:text-[#EDEDEC]">More-Content</li>
             </ul>
         </footer>
     );

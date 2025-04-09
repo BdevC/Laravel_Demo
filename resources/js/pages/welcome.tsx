@@ -14,8 +14,8 @@ export default function Welcome() {
                 <SingleSourceTruthHeader></SingleSourceTruthHeader>
                 <div className="flex w-full items-center justify-center opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
                     <main className="flex w-full max-w-[335px] flex-wrap lg:max-w-4xl">
-                        <div className="flex flex-col w-full items-left justify-left mt-6">
-                            <p>This isn’t a real site, but the code here is real. All images on this fake site are from the
+                        <div className="flex flex-col w-full items-left justify-left mt-6 ">
+                            <p className="dark:text-[#EDEDEC]">This isn’t a real site, but the code here is real. All images on this fake site are from the
                                 <a className="font-bold"href="https://inkscape.org/gallery"> Inkscape gallery.</a>
                                 &nbsp;The site was designed using Figma.  It uses Laravel, React and Tailwind CSS. 
                                 &nbsp;The initial intention was to theme the site as a bicycle club.
