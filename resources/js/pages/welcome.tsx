@@ -25,7 +25,7 @@ export default function Welcome() {
                             <Hero></Hero>
                         </div>
                         <div className="flex flex-col w-full items-left justify-left">
-                            <h1 className="text-3xl mb-1 font-semibold mt-3 mb-3">See The World on a Bike</h1>
+                            <h1 className="text-3xl mb-1 font-semibold mt-3 mb-3 dark:text-[#EDEDEC]">See The World on a Bike</h1>
                         </div>
                         <Trio></Trio>
                         <SSTFooter></SSTFooter>
